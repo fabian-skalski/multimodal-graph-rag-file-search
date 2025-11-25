@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "rate-limiter-service"
+version = "1.0.0"
+description = "Token bucket rate limiter service"
+authors = ["Fabian Skalski"]
+packages = [{include = "rate_limiter_service"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+fastapi = "^0.121.3"
+uvicorn = "^0.38.0"
+pydantic = "^2.0.0"
+redis = "^7.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
